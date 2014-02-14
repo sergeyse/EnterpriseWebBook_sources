@@ -222,11 +222,12 @@ div#main {
 }
 /* ------------------------- Main top section */
 #main-top-section {
-	background: url(../img/child-1.jpg) no-repeat right bottom, url(../img/bg-2.png) no-repeat 20% bottom;
+	background: url(../img/child-1.jpg) no-repeat 60% bottom, url(../img/bg-2.png) no-repeat 20% bottom;
 	width: 100%;
 	height: 320px;
 	margin-top: 18px;
 	border-bottom: 1px dotted #555;
+    float: left;
 }
 .donate-button {	
 	background: #ffa600;
@@ -269,6 +270,9 @@ div#main {
 }
 p.donation-address {
 	padding: 4em 46% 2.5em 2em;
+}
+#donation-address{
+    float: left;
 }
 
 /* Donation form  */
@@ -332,15 +336,25 @@ label.donation-heading {
 #video-container {
 	width:390px;
 	height:330px;
-	float: right;
+	float: left;
 	text-align: center;
 }
 #map-container {
 	width:300px;
 	height:330px;
 	position: relative;
-	float: right;
+	float: left;
 	margin-right: 10px
+}
+   /*making container for tweeter*/
+#twitter-container > iframe {
+    height: 150px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    display:inline-block;
+
 }
 #location-map {
 	background: #eee;
@@ -403,7 +417,7 @@ label.donation-heading {
 }
 /* Footer */
 footer {
-	border-top: 1px dotted #555;
+	/*border-top: 1px dotted #555;*/
 	text-align: right;
 	padding-top: 20px;
 }

@@ -417,6 +417,7 @@ window.onload = function() {
         
 	    var myScriptTag = document.createElement("script");
         myScriptTag.src = "http://api.openbeerdatabase.com/v1/breweries.json?callback=processBeer";
+
         var bd = document.getElementsByTagName('body')[0];
         bd.appendChild(myScriptTag);
         
@@ -424,5 +425,7 @@ window.onload = function() {
 	})();
 
 	/*svg pie chart //end */
+
+
 
 }
